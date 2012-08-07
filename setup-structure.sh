@@ -23,6 +23,7 @@ cp carsapp/app/assets/javascripts/lib/* carsdemo/app/assets/javascripts/lib
 cp carsapp/app/assets/javascripts/application.js carsdemo/app/assets/javascripts/application.js
 cp carsapp/Gemfile carsdemo/Gemfile
 rm carsdemo/public/index.html
+mkdir carsdemo/app/views/cars
 cp carsapp/app/views/cars/step1.html.erb carsdemo/app/views/cars/index.html.erb
 echo "Your carsdemo folder is now set up for the demo"
 
