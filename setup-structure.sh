@@ -1,5 +1,5 @@
 echo "This will set up your folder structure for the demo"
-mv backbone-cars carsapp2
+mv backbone-cars carsapp
 rails new carsdemo
 cp carsapp/public/* carsdemo/public
 cp -r carsapp/db/* carsdemo/db
