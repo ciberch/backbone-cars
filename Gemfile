@@ -12,3 +12,7 @@ group :development, :test do
     gem 'sqlite3'
     gem 'backbone-jasmine'
 end
+
+group :production do
+    gem "pg"
+end
