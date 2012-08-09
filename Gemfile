@@ -1,6 +1,7 @@
 source 'https://rubygems.org'
 
 gem 'rails'
+gem 'mysql2'
 
 gem 'jquery-rails'
 gem 'heroku'
@@ -10,7 +11,7 @@ gem 'ejs'
 
 group :development, :test do
     gem 'sqlite3'
-    gem 'backbone-jasmine'
+    gem 'jasmine'
 end
 
 group :production do

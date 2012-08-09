@@ -25,7 +25,7 @@
 <% content_for :js do %>
 
 <script>
-	
+
 	// use this model as a client-side permission/user-role setup
 	// permissions can be accessed by calling it the normal backbone way
 	// e.g.  Permission.get("canBid");
@@ -33,18 +33,18 @@
 	// can be changed by users using any standard browser.  As a result, do not rely
 	// on client-side permissions for real security.  It's really just a convenience.
 	// Everything should be checked on the server.
-	var PermissionModel = Backbone.Model.extend({			
+	var PermissionModel = Backbone.Model.extend({
 		defaults : {
 			canBid : true // use CanCan or your favorite role-based gem here to control access
 		}
 	});
 	var Permissions = new PermissionModel();
-	  
 
-	$(document).ready(function() {	
-	
+
+	$(document).ready(function() {
+
 		// Create the Pusher object using our API key
-		var pusher = new Pusher('0c6b8acfaac4f4a459d7');
+		var pusher = new Pusher('<%= Pusher.key %>');
 
 		// set up the dropdown comboboxes here
 		var countryList = new CountryList();
